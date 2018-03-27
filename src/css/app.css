@@ -1,10 +1,11 @@
 #headerWrapper {
     width: 100%;
+    height: 80px;
 }
 
 .logo {
     padding: 10px;
-    margin-right: 10x;
+    margin-right: 10px;
     font-size: 35px;
     font-family: fantasy;
 }
@@ -12,11 +13,30 @@
 .tagline {
     font-size: 10px;
     margin-top: 50px;
-    margin-left: -153px;
+    margin-left: -123px;
     font-family: monospace;
 }
 
 .nav-wrapper {
     margin-left: 100px;
     margin-top: 15px;
+}
+
+#livroListWrapper {
+	width: 100%;
+	padding: 10px;
+}
+
+#livroListWrapper input {
+	width: 25%;
+}
+
+#livroListWrapper .livro {
+	border: 1px solid gray;
+	padding: 10px;
+	margin-bottom: 10px;	
+}
+
+#livroListWrapper .livro .livro-details {
+	margin-left: 160px;
 }

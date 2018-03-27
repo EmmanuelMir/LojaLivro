@@ -9,7 +9,7 @@ var HeaderCtrl = function($scope){
 }
 
 var BookListCtrl = function($scope){
-	$scope.livros[
+	$scope.livros = [
 		{
 			imgUrl: "adultery.jpeg",
 			name: "Adultery",
@@ -71,4 +71,8 @@ var BookListCtrl = function($scope){
 			details: "Wings of Fire traces the life and times of India's former president A.P.J. Abdul Kalam. It gives a glimpse of his childhood as well as his growth as India's Missile Man. Summary of the Book Wings... View More"
 		}
 	];
+	
+	$scope.addToKart = function(livro) {
+		console.log("add to kart: ", livro);
+	}
 }

@@ -20,6 +20,33 @@
                 </ul>
             </div>
         </div>
+        
+        <div id="livroListWrapper" ng-controller="BookListCtrl">
+			<form role="form">
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Pesquise o seu livro aqui...">
+			  </div>
+			</form>
+			<div>
+			<ul class="list-unstyled">
+				<li class="livro" 
+					style="background: white url(imgs/{{livro.imgUrl}}) no-repeat"
+					ng-repeat="livro in livros">
+					<div class="livro-details clearfix">
+						<h3>{{livro.name}}</h3>
+						<p>{{livro.price}}</p>
+						<ul class="list-unstyled list-inline">
+							<li>Rating: {{livro.rating}}</li>
+							<li>Binding: {{livro.binding}}</li>
+							<li>Publisher: {{livro.publisher}}</li>
+							<li>Released: {{livro.releaseDate}}</li>
+						</ul>
+						<p>{{livro.details}}</p>
+						<button class="btn btn-info pull-right" ng-click="addToKart(livro)">Add to Kart</button>
+					</div>
+				</li>
+			</ul>
+		</div>
 
     </body>
 </html>
